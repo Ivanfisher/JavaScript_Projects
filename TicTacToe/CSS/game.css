@@ -1,0 +1,35 @@
+
+h1 {
+    font-weight: 900;
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+}
+
+/*-- THIS CONTAINER INCLUDES OUR TABLE AND OUR CANVAS --*/
+.center-container {
+    width: 608px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+canvas {
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+td {
+    cursor: pointer;
+    border: 4px solid rgba(3, 90, 252, 0.808);
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+}
+
+
+
