@@ -128,7 +128,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     // THIS LINE GIVES US ACCESS TO METHODS AND PROPERTIES TO USE ON CANVAS
     const c = canvas.getContext('2d');
     // THIS LINE INDICATES WHERE THE START OF A LINES X AXIS IS
-    let xl = coordX1,
+    let x1 = coordX1,
         // THIS LINE INDICATES WHERE THE START OF A LINES Y AXIS IS
         y1 = coordY1,
         // THIS LINE INDICATES WHERE THE END OF A LINES X AXIS IS
@@ -149,7 +149,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         // THIS METHOD STARTS A NEW PATH
         c.beginPath() ;
         // THIS METHOD MOVES US TO A STARTING POINT OF OUR LINE
-        c.moveTo(xl, yl);
+        c.moveTo(x1, y1);
         // THIS METHOD INDICATES THE END POINT OF OUR LINE
         c.lineTo(x, y);
         // THIS METHOD SETS THE WIDTH OF OUR LINE
