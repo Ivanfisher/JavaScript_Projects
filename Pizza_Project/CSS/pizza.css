@@ -1,0 +1,83 @@
+/*-- GENERAL STYLING --*/
+body {
+    background-color: #bbb;
+}
+
+h1 {
+    color: #111;
+    text-shadow: 1px 1px #999;
+    text-align: center;
+    font-weight: 800;
+    font-family: Optima, sans-serif;
+}
+
+h3 {
+    color: #000040;
+    font-weight: 600px;
+    font-family: Georgia, serif;
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*-- END GENERAL STYLING --*/
+
+/*-- MENU STYLING --*/
+
+#menuBG {
+    max-width: 750px;
+    height: auto;
+    margin: 40px auto 20px auto;
+    background-color: #eee;
+    border: 1px solid #111;
+    border-radius: 8px;
+}
+
+.order {
+    margin: 10px auto;
+    width: 100px;
+    height: 40px;
+}
+
+#btnOrder {
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+#btnOrder:hover {
+    background-color: #222;
+    color: white;
+}
+
+#frmMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.left, .right, .vegetables {
+    width: 200px;
+    height: 200px;
+    margin: 0px 8px;
+}
+
+
+/*-- END MENU STYLING --*/
+
+/*-- ORDER DETAILS STYLING --*/
+
+#showText, #totalPrice {
+    width: 200px;
+    height: auto;
+    margin: 4px 8px;
+    font-weight: 600;
+}
