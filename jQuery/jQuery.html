@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+            // USING THE jQUERY .READY FUNCTION TO APPLY CONTENT TO THE DOM AS SOON IT IS READY
+            $(document).ready(function() {
+                // APPENDING CONTENT TO THE HTML ELEMENT
+                $("html").append(
+                    "<body>\
+                        <div id='container'>\
+                            <div id='inner'>\
+                                <h1>Basic jQuery</h1>\
+                                <p id='1'>Paragraph 1</p>\
+                                <p id='2'>Paragraph 2</p>\
+                                <p id='3'>Paragraph 3</p>\
+                            </div>\
+                        </div>\
+                    </body>"
+                );// CHANGING THE COLOR OF THE CONTENT WITHIN THE ID '2' TO RED
+                $("#2").css({"color":"red"});
+                // MAKING THE 'H1' ELEMENT CONTENT SLOWLY HIDE WHEN THE CONTENT WITHIN THE ID '3' IS CLICKED
+                $("#3").click(function() {
+                    $('h1').hide('slow');
+                });
+            });
+        </script>
+    </body>
+</html>
