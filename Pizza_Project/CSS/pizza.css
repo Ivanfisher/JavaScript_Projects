@@ -1,6 +1,13 @@
 /*-- GENERAL STYLING --*/
 body {
     background-color: #bbb;
+    opacity: 1;
+    transition: 3s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 h1 {
