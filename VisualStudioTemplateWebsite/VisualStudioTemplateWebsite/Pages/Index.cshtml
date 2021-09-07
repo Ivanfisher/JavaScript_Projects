@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <p>A simple website with an embedded video and an animated circle.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/44mVzqGeS-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="animationContainer">
+        <div id="myAnimation" onclick="myMove()">
+            <p>I move 200 px to the bottom when clicked.</p>
+        </div>
+    </div>
+</div>
